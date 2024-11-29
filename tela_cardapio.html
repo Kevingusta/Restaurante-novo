@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/tela-inicial/header.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/styles.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/menu.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cardápio</title>
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <img id="nav_logo" src="assets/Bella-logo.png" alt="logo">
+
+            <ul id = "nav_list">
+                <li class = "nav-item active">
+                    <a href="#home">Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class = "nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id = "mobile_nav_list">
+                <li class = "nav-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class = "nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+
+        </div>
+    </header>
+
+    <section id="menu">
+        <h2 class = "section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nossos melhores pizzas</h3>
+
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Whopper Rodeio 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer2.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Whopper Barbecue Bacon 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer3.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Whopper Furioso 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+        
+                <img src="assets/burguer4.png" alt="Hamburguer" class="dish-image">
+        
+                <h3 class="dish-title">
+                    Mega Stacker Cheddar 3.0 
+                </h3>
+        
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+        
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+        
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer5.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Mega Stacker Atômico 3.0 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer6.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Whopper Duplo 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer7.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    King Costela 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+        
+                <img src="assets/burguer8.png" alt="Hamburguer" class="dish-image">
+        
+                <h3 class="dish-title">
+                    BK Cheddar
+                </h3>
+        
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+        
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+        
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer9.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Whopper Jr. 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer10.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Chicken Júnior 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/burguer11.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Chicken Duplo
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+        
+                <img src="assets/burguer12.png" alt="Hamburguer" class="dish-image">
+        
+                <h3 class="dish-title">
+                    CBK 
+                </h3>
+        
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+        
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+        
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h2 class = "section-title" id = "section-title-fritas">Fritas</h2>
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/frita1.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Batata Suprema Catupiry 
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/frita2.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Balde de Batata
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="assets/frita3.png" alt="Hamburguer" class="dish-image">
+
+                <h3 class="dish-title">
+                    Batata Furiosa
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+        
+                <img src="assets/frita4.png" alt="Hamburguer" class="dish-image">
+        
+                <h3 class="dish-title">
+                    Trio Supremo
+                </h3>
+        
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
+                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
+                </span>
+        
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+        
+                <div class="dish-price">
+                    <h4>R$ 19,99</h4>
+                    <button class = "btn-default">
+                        <i class = "fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <img src="assets/wave (1).svg" alt="Footer">
+
+        <div id="footer_items">
+            <span id="copyright">
+                © 2024 - Todos os direitos reservados
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+</html>

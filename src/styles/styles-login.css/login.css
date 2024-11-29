@@ -1,0 +1,31 @@
+body {
+    background: #b31b1b;
+    height: 100vh;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #fff;
+
+}
+form {
+    width: 300px;
+}
+input {
+    border: none;
+}
+input,
+button {
+   padding: 10px;
+   width: -webkit-fill-available;
+}
+button {
+    margin-bottom: 10px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}

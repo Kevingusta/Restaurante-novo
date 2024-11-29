@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/styles.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/header.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/home.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/menu.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/testimonials.css">
+    <link rel="stylesheet" href="src/styles/tela-inicial/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Bella Burguer</title>
 </head>
 <body>
     <header>
@@ -49,7 +52,7 @@
                 </li>
             </ul>
 
-            <button class="btn-default">
+            <button class="btn-default" onclick="cardapio()">
                 Peça aqui
             </button>
 
@@ -102,7 +105,7 @@
                     <i class="fa-solid fa-heart"></i>
                 </div>
 
-                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-heart">
+                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-image">
 
                 <h3 class="dish-title">
                     Lorem ipsum 
@@ -134,7 +137,7 @@
                     <i class="fa-solid fa-heart"></i>
                 </div>
 
-                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-heart">
+                <img src="assets/burguer2.png" alt="Hamburguer" class="dish-image">
 
                 <h3 class="dish-title">
                     Lorem ipsum 
@@ -166,7 +169,7 @@
                     <i class="fa-solid fa-heart"></i>
                 </div>
 
-                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-heart">
+                <img src="assets/burguer3.png" alt="Hamburguer" class="dish-image">
 
                 <h3 class="dish-title">
                     Lorem ipsum 
@@ -198,71 +201,7 @@
                     <i class="fa-solid fa-heart"></i>
                 </div>
 
-                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-heart">
-
-                <h3 class="dish-title">
-                    Lorem ipsum 
-                </h3>
-
-                <span class="dish-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
-                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
-                </span>
-
-                <div class="dish-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span>(500+)</span>
-                </div>
-
-                <div class="dish-price">
-                    <h4>R$ 19,99</h4>
-                    <button class = "btn-default">
-                        <i class = "fa-solid fa-basket-shopping"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-heart">
-
-                <h3 class="dish-title">
-                    Lorem ipsum 
-                </h3>
-
-                <span class="dish-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
-                     mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
-                </span>
-
-                <div class="dish-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span>(500+)</span>
-                </div>
-
-                <div class="dish-price">
-                    <h4>R$ 19,99</h4>
-                    <button class = "btn-default">
-                        <i class = "fa-solid fa-basket-shopping"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-heart">
+                <img src="assets/burguer4.png" alt="Hamburguer" class="dish-image">
 
                 <h3 class="dish-title">
                     Lorem ipsum 
@@ -291,7 +230,91 @@
             </div>
         </div>
       </section>
+
+      <section id = "testimonials">
+        <img src="assets/masterchef.png" class = "testimonials_chef" alt="Master Chef">
+
+        <div id="testimonials_content">
+            <h2 class="section-title">
+                Depoimentos
+            </h2>
+            <h3 class="section-subtitle">
+                o que os clientes falam sobre nós
+            </h3>
+
+            <div id="feedbacks">
+                <div class="feedback">
+                    <img src="assets/avatar1.png" alt="Avatar" class="feedback-avatar">
+               
+
+                    <div class="feedback-content">
+                        <p>
+                            Fulano de Tal
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="feedback">
+                    <img src="assets/avatar1.png" alt="Avatar" class="feedback-avatar">
+               
+
+                    <div class="feedback-content">
+                        <p>
+                            Fulano de Tal
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+            <button class = "btn-default">
+                Ver mais Avaliações
+            </button>
+        </div>
+      </section>
     </main>
-    <script src="src/javascript/script.js"></script>
+
+    <footer>
+        <img src="assets/wave (1).svg" alt="Footer">
+
+        <div id="footer_items">
+            <span id="copyright">
+                © 2024 - Todos os direitos reservados
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/tela-inicio-js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>

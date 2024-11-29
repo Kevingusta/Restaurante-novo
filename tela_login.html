@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles-login.css/login.css">
+    <link rel="stylesheet" href="src/styles/styles-login.css/global.css">
+    <title>Document</title>
+</head>
+<body class="centralize">
+    <section>
+        <form>
+            <div class="form-field">
+                <div><label>Email</label></div>
+                <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <div class="error" id="email-invalid-error">Email é inválido</div>
+            </div>
+            <div class="form-field">
+                <div><label>Senha</label></div>
+                <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+                <div class="error" id="password-required-error">Senha é obrigatória</div>
+            </div>
+            <div>
+                <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>
+            </div>
+            <div>
+                <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+            </div>
+            <div>
+                <button type="button" class="outline" onclick="register()">Registrar</button>
+            </div>
+        </form>
+</section>
+</body>
+
+<div class="loading centralize">
+    <label>Carregando...</label>
+</div>
+
+<script src="src/javascript/login-js/login.js"></script>
+<script src="src/javascript/login-js/validations.js"></script>
+<script src="src/javascript/login-js/loading.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+<script>
+     const firebaseConfig = {
+    apiKey: "AIzaSyBPi-r9hX8gzg7MYr9vWuyr9geO6KWh4wU",
+    authDomain: "bellaburguer-15971.firebaseapp.com",
+    projectId: "bellaburguer-15971",
+    storageBucket: "bellaburguer-15971.firebasestorage.app",
+    messagingSenderId: "249550021247",
+    appId: "1:249550021247:web:527fc670677e6ad5f8d54a",
+    measurementId: "G-XMB4YGZ82V"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+ 
+</script>
+</html>
