@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/tela-inicial/styles.css">
-    <link rel="stylesheet" href="src/styles/tela-inicial/header.css">
-    <link rel="stylesheet" href="src/styles/tela-inicial/home.css">
-    <link rel="stylesheet" href="src/styles/tela-inicial/menu.css">
-    <link rel="stylesheet" href="src/styles/tela-inicial/testimonials.css">
-    <link rel="stylesheet" href="src/styles/tela-inicial/footer.css">
+    <link rel="stylesheet" href="../view/tela-inicial/styles.css">
+    <link rel="stylesheet" href="../view/tela-inicial/header.css">
+    <link rel="stylesheet" href="../view/tela-inicial/home.css">
+    <link rel="stylesheet" href="../view/tela-inicial/menu.css">
+    <link rel="stylesheet" href="../view/tela-inicial/testimonials.css">
+    <link rel="stylesheet" href="../view/tela-inicial/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Bella Burguer</title>
@@ -16,7 +16,9 @@
 <body>
     <header>
         <nav id="navbar">
-            <img id="nav_logo" src="assets/Bella-logo.png" alt="logo">
+            <a href="../view/tela_inicio.html">
+            <img id="nav_logo" src="../../assets/logobella.png" alt="logo">
+            </a>
 
             <ul id = "nav_list">
                 <li class = "nav-item active">
@@ -30,7 +32,7 @@
                 </li>
             </ul>
 
-            <button class="btn-default">
+            <button onclick="cardapio()" class="btn-default">
                 Peça aqui
             </button>
 
@@ -71,7 +73,7 @@
             dicta distinctio accusantium earum odio ipsa esse assumenda minima, veniam provident nisi id rem recusandae eveniet vitae incidunt est.</p>
 
             <div id="cta_buttons">
-                <a href="#" class = "btn-default">Ver Cardápio</a>
+                <a href="../view/tela_cardapio.html" class = "btn-default">Ver Cardápio</a>
                 <a href="tel: +999999999" id="phone_button"><button class = "btn-default"><i class ="fa-solid fa-phone"></i>
                 </button>
                 (51) 99999-9999
@@ -91,7 +93,7 @@
           
         </div>
         <div id="banner">
-            <img src="assets/pizza-gira-luna.png" alt="pizza">
+            <img src="../../assets/burguer-shape.png" alt="pizza" id="shape_banner">
         </div>
       </section>
 
@@ -101,14 +103,12 @@
 
         <div id="dishes">
             <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+                
 
-                <img src="assets/burguer1.png" alt="Hamburguer" class="dish-image">
+                <img src="../assets/burguer1.png" alt="Hamburguer" class="dish-image">
 
                 <h3 class="dish-title">
-                    Lorem ipsum 
+                    Whopper Rodeio 
                 </h3>
 
                 <span class="dish-description">
@@ -126,21 +126,19 @@
                 </div>
 
                 <div class="dish-price">
-                    <h4>R$ 19,99</h4>
-                    <button class = "btn-default">
+                    <h4 id = "price_produto">R$ 22,99</h4>
+                    <button class = "btn-default" onclick="adicionarAoCarrinho('Whopper Rodeio', 22.99,'../assets/burguer1.png')">
                         <i class = "fa-solid fa-basket-shopping"></i>
                     </button>
                 </div>
             </div>
             <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+                
 
-                <img src="assets/burguer2.png" alt="Hamburguer" class="dish-image">
+                <img src="../assets/burguer2.png" alt="Hamburguer" class="dish-image">
 
                 <h3 class="dish-title">
-                    Lorem ipsum 
+                    Whopper Barbecue Bacon 
                 </h3>
 
                 <span class="dish-description">
@@ -158,21 +156,19 @@
                 </div>
 
                 <div class="dish-price">
-                    <h4>R$ 19,99</h4>
-                    <button class = "btn-default">
+                    <h4 id = "price_produto">R$ 24,99</h4>
+                    <button class = "btn-default" onclick="adicionarAoCarrinho('Whopper Barbecue Bacon', 24.99,'../assets/burguer2.png')">
                         <i class = "fa-solid fa-basket-shopping"></i>
                     </button>
                 </div>
             </div>
             <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
+                
 
-                <img src="assets/burguer3.png" alt="Hamburguer" class="dish-image">
+                <img src="../assets/burguer3.png" alt="Hamburguer" class="dish-image">
 
                 <h3 class="dish-title">
-                    Lorem ipsum 
+                    Whopper Furioso 
                 </h3>
 
                 <span class="dish-description">
@@ -190,28 +186,26 @@
                 </div>
 
                 <div class="dish-price">
-                    <h4>R$ 19,99</h4>
-                    <button class = "btn-default">
+                    <h4 id = "price_produto">R$ 27,99</h4>
+                    <button class = "btn-default" onclick="adicionarAoCarrinho('Whopper Furioso', 27.99,'../assets/burguer3.png')">
                         <i class = "fa-solid fa-basket-shopping"></i>
                     </button>
                 </div>
             </div>
             <div class="dish">
-                <div class="dish-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <img src="assets/burguer4.png" alt="Hamburguer" class="dish-image">
-
+                
+        
+                <img src="../assets/burguer4.png" alt="Hamburguer" class="dish-image">
+        
                 <h3 class="dish-title">
-                    Lorem ipsum 
+                    Mega Stacker Cheddar 3.0 
                 </h3>
-
+        
                 <span class="dish-description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum, vero inventore nam, dolores pariatur modi ut
                      mollitia magnam quaerat, quod non cupiditate possimus voluptates minus facilis quae ducimus accusantium!
                 </span>
-
+        
                 <div class="dish-rate">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -220,10 +214,10 @@
                     <i class="fa-regular fa-star"></i>
                     <span>(500+)</span>
                 </div>
-
+        
                 <div class="dish-price">
-                    <h4>R$ 19,99</h4>
-                    <button class = "btn-default">
+                    <h4 id = "price_produto">R$ 35,99</h4>
+                    <button class = "btn-default" onclick="adicionarAoCarrinho('Mega Stacker Cheddar 3.0', 35.99,'../assets/burguer4.png')">
                         <i class = "fa-solid fa-basket-shopping"></i>
                     </button>
                 </div>
@@ -232,7 +226,7 @@
       </section>
 
       <section id = "testimonials">
-        <img src="assets/masterchef.png" class = "testimonials_chef" alt="Master Chef">
+        <img src="../assets/masterchef.png" class = "testimonials_chef" alt="Master Chef">
 
         <div id="testimonials_content">
             <h2 class="section-title">
@@ -244,12 +238,12 @@
 
             <div id="feedbacks">
                 <div class="feedback">
-                    <img src="assets/avatar1.png" alt="Avatar" class="feedback-avatar">
+                    <img src="../assets/avatar1.png" alt="Avatar" class="feedback-avatar">
                
 
                     <div class="feedback-content">
                         <p>
-                            Fulano de Tal
+                            Gilberto Souza
                             <span>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -258,19 +252,19 @@
                                 <i class="fa-solid fa-star"></i>
                             </span>
                         </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        <p>Amei a comida, hamburguer bem recheado!
 
                         </p>
                     </div>
                 </div> 
 
                 <div class="feedback">
-                    <img src="assets/avatar1.png" alt="Avatar" class="feedback-avatar">
+                    <img src="../assets/avatar2.png" alt="Avatar" class="feedback-avatar">
                
 
                     <div class="feedback-content">
                         <p>
-                            Fulano de Tal
+                            Paulo Queiroz
                             <span>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -279,7 +273,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </span>
                         </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        <p>Ótima qualidade de comida, gostei muito!
 
                         </p>
                     </div>
@@ -294,7 +288,7 @@
     </main>
 
     <footer>
-        <img src="assets/wave (1).svg" alt="Footer">
+        <div id="footer_linha"></div>
 
         <div id="footer_items">
             <span id="copyright">
@@ -314,7 +308,8 @@
             </div>
         </div>
     </footer>
-    <script src="src/javascript/tela-inicio-js/script.js"></script>
+    <script src="../controller/tela-inicio-js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../controller/cardapio-carrinho/cardapio.js"></script>
 </body>
 </html>

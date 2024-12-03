@@ -21,7 +21,7 @@ $(document).ready(function() {
 
         sections.each(function(i) {
             const section = $(this);
-            const sectionTop = section.offset().top - 96;
+            const sectionTop = section.offset().top - header.outerHeight();
             const sectionBottom = sectionTop+ section.outerHeight();
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -60,5 +60,5 @@ $(document).ready(function() {
 });
 
 function cardapio(){
-    window.location.href = "tela_cardapio.html";
+    window.location.href = "../view/tela_cardapio.html";
 }

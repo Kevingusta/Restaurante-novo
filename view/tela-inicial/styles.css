@@ -7,12 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 :root {
-    /*--background-color: #fff9ea;*/
-    --background-color: #fff;
-    --primary-color: #FFC000;
+    --background-color: #F2EDEB;
+    --primary-color: #D9851E;
     --secondary-color: #333333;
     --text-color: #1d1d1dad;
-    --test-color: #ea9a07;
 }
 html{
     scroll-behavior: smooth;    
