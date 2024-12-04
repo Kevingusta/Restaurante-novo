@@ -12,6 +12,8 @@ Arquivos e Diretórios
 
 package.json: arquivo que contém as dependências do projeto
 view/: diretório que contém os arquivos HTML do projeto
+   tela_login: caso ja tenha se registrado, faça seu login
+   tela_registro: se não houver conta, então se registre
    cadastro_produto.html: página de cadastro de produtos
    tela_cardapio.html: página do cardápio
    tela_inicio.html: página inicial
