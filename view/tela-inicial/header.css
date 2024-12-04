@@ -62,7 +62,16 @@ header{
         list-style: none;
         text-align: center;
     }
+    .btn-inicio{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 #nav_logo{
     width: 200px;
+}
+.btn-inicio{
+    display: flex;
+    gap: 12px;
 }
