@@ -61,3 +61,21 @@ function removerProduto(index) {
 window.onload = function() {
     carregarCarrinho(); // Carrega os produtos quando a página for aberta
 }
+
+function finalizarCompra() {
+    Swal.fire({
+        title: 'Compra Finalizada!',
+        text: 'Obrigado por comprar com a gente! ❤️',
+        icon: 'success',
+        confirmButtonText: 'Voltar ao Início',
+        backdrop: `
+            rgba(0,0,123,0.4)
+            url("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif")
+            left top
+            no-repeat
+        `
+    }).then(() => {
+        // Redireciona para o início
+        window.location.href = "../view/tela_inicio.html";
+    });
+}
