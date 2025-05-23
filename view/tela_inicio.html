@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../view/tela-inicial/home.css">
     <link rel="stylesheet" href="../view/tela-inicial/menu.css">
     <link rel="stylesheet" href="../view/tela-inicial/testimonials.css">
+    <link rel="stylesheet" href="../view/tela-inicial/comentario.css">
     <link rel="stylesheet" href="../view/tela-inicial/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -230,66 +231,41 @@
         </div>
       </section>
 
-      <section id = "testimonials">
-        <img src="../assets/masterchef.png" class = "testimonials_chef" alt="Master Chef">
-
+      <section id="testimonials">
+        <img src="../assets/masterchef.png" class="testimonials_chef" alt="Master Chef">
+    
         <div id="testimonials_content">
-            <h2 class="section-title">
-                Depoimentos
-            </h2>
-            <h3 class="section-subtitle">
-                o que os clientes falam sobre nós
-            </h3>
-
+            <h2 class="section-title">Depoimentos</h2>
+            <h3 class="section-subtitle">o que os clientes falam sobre nós</h3>
+    
             <div id="feedbacks">
-                <div class="feedback">
-                    <img src="../assets/avatar1.png" alt="Avatar" class="feedback-avatar">
-               
-
-                    <div class="feedback-content">
-                        <p>
-                            Gilberto Souza
-                            <span>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </span>
-                        </p>
-                        <p>Amei a comida, hamburguer bem recheado!
-
-                        </p>
-                    </div>
-                </div> 
-
-                <div class="feedback">
-                    <img src="../assets/avatar2.png" alt="Avatar" class="feedback-avatar">
-               
-
-                    <div class="feedback-content">
-                        <p>
-                            Paulo Queiroz
-                            <span>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </span>
-                        </p>
-                        <p>Ótima qualidade de comida, gostei muito!
-
-                        </p>
-                    </div>
-                </div> 
+                <!-- Depoimentos existentes já aqui -->
             </div>
-
-            <button class = "btn-default">
-                Ver mais Avaliações
-            </button>
+    
+            <form id="commentForm" style="margin-top: 30px;">
+                <h3>Deixe seu depoimento</h3>
+                <input type="text" id="name" placeholder="Seu nome" required><br><br>
+              
+                <label>Nota:</label>
+                <div id="star-rating" class="star-rating">
+                  <i class="fa-regular fa-star" data-value="1"></i>
+                  <i class="fa-regular fa-star" data-value="2"></i>
+                  <i class="fa-regular fa-star" data-value="3"></i>
+                  <i class="fa-regular fa-star" data-value="4"></i>
+                  <i class="fa-regular fa-star" data-value="5"></i>
+                </div>
+                <input type="hidden" id="rating" required>
+              
+                <textarea id="comment" placeholder="Seu comentário" required></textarea><br><br>
+              
+                <button type="submit" class="btn-default">Enviar Depoimento</button>
+              </form>
+              
+    
+            <button class="btn-default" id="loadMoreBtn" style="margin-top:20px;">Ver mais Avaliações</button>
         </div>
-      </section>
+    </section>
+    
     </main>
 
     <footer>
@@ -316,5 +292,6 @@
     <script src="../controller/tela-inicio-js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../controller/cardapio-carrinho/cardapio.js"></script>
+    <script src="../model/comentario.js"></script>
 </body>
 </html>
